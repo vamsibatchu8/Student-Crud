@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+        <img src="images/images.jpg" alt="">
+    <h2  centre> STUDENT CRUD APP</h2>
+    <form>
+        <label for = "name"> Name: </label>
+        <input type="text" id = "name">
+        <br>
+        <br>
+        <label for = "phone"> Phone: </label>
+        <input type="number" id = "phone">
+        <br>
+        <br>
+        <label for = "dob"> DOB: </label>
+        <input type="text" id = "dob">
+        <br>
+        <br>
+        <label for = "mail"> Mail: </label>
+        <input type="email" id = "mail">
+        <br>
+        <br>
+        <input type="button" value="Submit" onclick='manageData()'>
+    </form>
+    <div id="msg"></div>
+
+    <h3>Student Data</h3>
+    <table class = "style">
+        <thead>
+            <tr class="active">
+                <td>S.No</td>
+                <td>Name</td>
+                <td>Phone</td>
+                <td>DOB</td>
+                <td>Email</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody id="root">
+
+        </tbody>
+    </table>
+
+    <script src = "crud.js"></script>
+    <link href="crud.css" rel = "stylesheet">
+</body>
+</html>
